@@ -152,22 +152,91 @@
             font-size: 0.9rem;
             color: #666;
         }
-        .linkedin-link {
-    color: #0073b1;  /* LinkedIn Blue */
-}
-.linkedin-link:hover {
-    color: #005580;  /* Darker shade for hover effect */
-}
 
+        .linkedin-link {
+            color: #0073b1;  /* LinkedIn Blue */
+        }
+
+        .linkedin-link:hover {
+            color: #005580;  /* Darker shade for hover effect */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* Stacks the sidebar and content on smaller screens */
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .sidebar h2 {
+                font-size: 1.3rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content .section h3 {
+                font-size: 1rem;
+            }
+
+            .content .section p, .content .section ul li {
+                font-size: 0.9rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+
+            .sidebar img {
+                width: 80%; /* Adjust profile image size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .header p {
+                font-size: 0.9rem;
+            }
+
+            .content h2 {
+                font-size: 1.3rem;
+            }
+
+            .content .section h3 {
+                font-size: 0.9rem;
+            }
+
+            .content .section p, .content .section ul li {
+                font-size: 0.8rem;
+            }
+
+            footer {
+                font-size: 0.7rem;
+            }
+
+            .sidebar img {
+                width: 90%; /* Smaller profile image */
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Header -->
     <div class="header">
-        <h1> Lagra Abdelkader Ryad<y/h1>
-        <p>                                       </p>
-       
+        <h1>Lagra Abdelkader Ryad</h1>
+        <p>Fashion Store Manager | Mechanical Engineering Student</p>
     </div>
 
     <!-- Main Container -->
@@ -175,16 +244,15 @@
         <!-- Sidebar -->
         <div class="sidebar">
             <img src="IMG-20241108-WA0002.jpg" alt="Profile Picture">
-            <h2>Lagra Abdelkader Ryad<y/h2>
-            <p>lagraabdelkaderrayd@gmail.com  +213790040174 </p>
+            <h2>Lagra Abdelkader Ryad</h2>
+            <p>lagraabdelkaderrayd@gmail.com | +213790040174</p>
             <ul>
-                <h2>languages </h2>
-            <p>arabic </p>
-            <p>English</p>  
-            <p>french </p>  
-  
-            <p>Connect with me on <a href="https://www.linkedin.com/in/abdelkader-ryad-lagra-195656299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></p>
-             
+                <h2>Languages</h2>
+                <p>Arabic</p>
+                <p>English</p>
+                <p>French</p>
+
+                <p>Connect with me on <a href="https://www.linkedin.com/in/abdelkader-ryad-lagra-195656299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-link">LinkedIn</a></p>
             </ul>
         </div>
 
@@ -208,10 +276,9 @@
                     <li>Supervised a team, providing guidance, training, and performance evaluations to drive sales and maintain store standards.</li>
                     <li>Developed and executed business strategies to increase foot traffic and sales, contributing to the store’s growth.</li>
                     <li>Cultivated a passion for business management, driving results through innovative solutions and customer-focused initiatives</li>
-
                 </ul>
-                <h3>Student in Mechanical Engineering  in university of sicence and technology mohamed boudiaf </h3>
-                <p>2022 - present </p>
+                <h3>Student in Mechanical Engineering at University of Science and Technology Mohamed Boudiaf</h3>
+                <p>2022 - Present</p>
                 <ul>
                     <li>Developing strong technical knowledge and skills in mechanics, thermodynamics, and materials science.</li>
                     <li>Applying engineering principles to real-world problems, combining academic learning with a strong business mindset</li>
@@ -222,9 +289,9 @@
             <div class="section">
                 <h2>Skills</h2>
                 <ul>
-                    <li>communication , negociation , sales</li>
-                    <li>offline marketing , social media </li>
-                    <li>leadership , creativity , ability to adabte to change </li>
+                    <li>Communication, Negotiation, Sales</li>
+                    <li>Offline Marketing, Social Media</li>
+                    <li>Leadership, Creativity, Adaptability</li>
                 </ul>
             </div>
         </div>
@@ -234,11 +301,5 @@
     <footer>
         © 2024 lagraabdelkaderrayd. All Rights Reserved.
     </footer>
-    <script>
-        // JavaScript to handle Contact Me button click
-        document.getElementById('contactBtn').addEventListener('click', function () {
-            window.open('https://www.linkedin.com/in/abdelkader-ryad-lagra-195656299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank');
-        });
-    </script>
 </body>
 </html>
